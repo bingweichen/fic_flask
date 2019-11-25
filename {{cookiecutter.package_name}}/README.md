@@ -23,5 +23,6 @@ python manager.py runserver | db
 `
 
 # template
-`cookiecutter /Users/chen/myPoject/friends/friends_backend/py_cookiecutter/my_template
+`
+cookiecutter https://github.com/bingweichen/fic_flask_create_app.git
 `
