@@ -3,13 +3,13 @@
 import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-# DATABASE_URI = 'sqlite:////Users/chen/myPoject/friends/friends_backend/app.db'
-DATABASE_URI = 'postgres://chen@localhost'
+# DATABASE_URI = 'sqlite:////path_2_your_db'
+DATABASE_URI = 'postgres://username:password@localhost'
 
 
 class Config:
     SECRET_KEY = os.environ.get(
-        'SECRET_KEY') or 'd*eds-223-ssas-#$dw3-@hdde'
+        'SECRET_KEY') or 'your_secret_key'
 
     @staticmethod
     def init_app(app):
