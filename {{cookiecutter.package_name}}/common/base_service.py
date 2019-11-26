@@ -1,16 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-@author: bingweichen
-@contact: bingwei.chen11@gmail.com
-@File    : base_service.py
-@Time    : 2019/11/18 2:10 PM
-@Site    : 
-@Software: IntelliJ IDEA
-@desc: 
-"""
-
-
 class BaseService:
     def __init__(self, cls):
         self.cls = cls
