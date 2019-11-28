@@ -1,28 +1,42 @@
+# Running locally
+1. install requirements
+```
+pip install -r requirements
+```
+
+2. migrate database
+```
+python manager.py db init
+python manager.py db migrate
+python manager.py db upgrade
+```
+3. run server
+
+```
+python manager.py runserver
+```
+
+
 # migration
 create a migration repository 
 `
-flask db init
+python manager.py db init
 `
-
 generate an initial migration
 ``
-flask db migrate
+python manager.py db migrate
 ``
 
 apply the migration to the database
 `
-flask db upgrade
+python manager.py db upgrade
 `
-
-env FLASK_APP=run.py flask run
-
 # script 
-
 `
 python manager.py runserver | db 
 `
 
-# template
+# create app (template)
 `
 cookiecutter https://github.com/bingweichen/fic_flask_create_app.git
 `
